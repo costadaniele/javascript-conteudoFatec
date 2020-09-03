@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <script>
+            let b = 5;
+            function inc(){
+                z = z + 1;
+                alert(z);
+            }
+            
+            function escopo3(){
+                if(true){
+                    const a = 10;
+                    alert(a);
+                }
+                alert(b);
+            }
+            
+            function escopo2(){
+                if(true){
+                    if (true){
+                        let z = 5;
+                    }
+                    alert("Primeiro: " + z);
+                }
+            }
+            
+            function escopo(){
+                var z = 9;
+                if (z == 9){
+                    var y = 8;
+                    alert("Primeiro z: " + z);
+                    alert("Primeiro y: " + y);
+                }
+                alert("Segundo z: " + z);
+                alert("Segundo y: " + y);
+                //w EH CONSTANTE. NAO PODEMOS MUDAR.
+                const w = 7;
+                w = w + 1;
+                alert(w);
+                //MUDAR w.
+
+            }
+        
+            function maior(x,y){
+                if(x >= y){
+                    return x;
+                }else{
+                    return y;
+                }
+            }
+        
+            function somar(x,y){
+                return x+y;
+            }
+            
+            function ola(){
+                alert("Ola mundo!");
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            escopo3();
+        </script>
+    </body>
+</html>
