@@ -1,33 +1,30 @@
-function percorrer(ls){
+function percorrer(ls) {
     //ls.length => tamanho da lista
-    //for(inicio,parada,passo)
-    
+    //for(inicio, parada, passo)
+
     //alert(ls[0])
     //alert(ls[1])
-    //alert(ls[2])
-    //...
-    //alert(ls[ls.length - 1])
-    for(let i = 0; i < ls.length; i++){
-        alert(i + " => " + ls[i]);
+
+    for (let i = 0; i < ls.length; i++) {
+        document.write(i + " => " + ls[i] + "<br>");
     }
-    
 }
 
-function ola(){
-    alert("OLA MUNDO");
+function ola() {
+    alert("Olá mundo!");
 }
 
-function def(){
-    //LISTA VAZIA -> []
-    //Push: Inserir elementos na lista
-    //Pop: Remover
-    //Update: Acesso via indice
+function def() {
+    //lista vazia -> []
+    //push: inserir
+    //pop: remover
+    //update: acesso via indice
     var lista = [];
-    lista.push(1,2,"True",5.7,true,"Q");
-    lista.push(7);
+    lista.push(1, 1.5, "true", 1.7, "Dani");
+    lista.push(12);
     var ret = lista.pop();
     document.write(lista + "<br>");
     document.write(ret + "<br>");
-    document.write(lista[1]);
+    document.write(lista[2], "\t");
     percorrer(lista);
 }
